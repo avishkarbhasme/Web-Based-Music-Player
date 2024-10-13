@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    background: #2a3132;
+}
+
+.container h1 {
+    color: #ffffff;
+}
+
+ul {
+    background: #00203FFF;
+    color: #ADEFD1FF;
+    max-width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    height: auto;
+    max-height: 5vh;
+}
+
+.navlinks {
+
+    display: grid;
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.mar {
+    margin: 0 auto;
+}
+
+img {
+    width: 3rem;
+}
+
+.container {
+    min-height: 75vh;
+    max-height: 75vh;
+    color: #F4DF4EFF;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    color: #F4DF4EFF;
+}
+
+.player {
+    position: relative;
+    color: #ADEFD1FF;
+    background: #00203FFF;
+    height: calc(17vh + 2px);
+}
+
+.songname {
+    position: absolute;
+    width: 100vw;
+    top: 0%;
+    left: 0;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#progressbar {
+    position: absolute;
+    width: 60vw;
+    top: 75%;
+    left: 20%;
+}
+
+#playbutton {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    left: 49%;
+}
+
+#forward {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    visibility: hidden;
+}
+
+#backward {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    visibility: hidden;
+}
+
+.songbanner {
+    display: grid;
+    border: 2px solid yellowgreen;
+    align-self: start;
+    justify-items: center;
+    min-height: 100%;
+    /* background: url(/kisspng-microphone-headphones-vector-headphones-5a835fb26050b6.0967631615185591543945.png);
+    background-size:70%;
+    background-repeat: no-repeat; */
+}
+.songbanner img{
+    width:60%;
+    /* height: 70%; */
+}
+
+.songlist {
+    border: 2px solid yellowgreen;
+    border-right: 0px;
+    text-align: center;
+    min-height: 100%;
+}
+
+.songitem {
+    background-color: wheat;
+    color: black;
+    font-weight: bolder;
+    margin: 5% 10%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.songitemimage {
+    width: 10px;
+    margin: 0 10px 0 5px;
+}
+
+#durationsongitem {
+    padding-right: 10px;
+}
+
+.song_item_play img {
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#currenttime {
+    position: absolute;
+    top: 74.5%;
+    left: 17%;
+}
+
+#totaltime {
+    position: absolute;
+    top: 74.5%;
+    left: 80.5%;
+}
